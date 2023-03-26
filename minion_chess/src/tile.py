@@ -8,7 +8,7 @@ class Tile(pg.sprite.Sprite):
         self.tilex = tilex
         self.tiley = tiley
         self.rect = (self.tilex, self.tiley, width, height)
-        self.image = None
+        self.image = pg.Surface((width, height))
         self.visible = False
 
     def show(self, visible):
